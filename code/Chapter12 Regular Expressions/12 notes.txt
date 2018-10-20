@@ -1,0 +1,229 @@
+Week2
+11.1 Regular Expressions
+
+see python documentation
+
+import re 
+re.search()
+if a string matches a regular expression
+similar to using the find() method for strings
+
+re.findall() 
+extract portions of a string that match the re
+similar to a combination of find(0 and slicing: var[5:10]
+
+hand = open('mbox-short.txt')
+for line in hand:
+	line = line.rstrip()
+	if line.find('From: ') >=0:
+		print(line)
+
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+	line = line.rstrip()
+	if re.search('From: ', line): #library.function, pass in the line and the string, return true or false
+		print(line)
+
+---
+hand = open('mbox-short.txt')
+for line in hand:
+	line = line.rstrip()
+	if line.startswith('From: ') >=0:
+		print(line)
+
+import re
+hand = open('mbox-short.txt')
+for line in hand:
+	line = line.rstrip()
+	if re.search('^From: ', line): #add the ^ to specify the start character
+		print(line)
+
+---
+
+Wild-Card Characters
+dot . matches any character
+asterisk * means any number of times
+
+eg. ^X.*:
+this will get strings start with X, having any characters then followed a colon:
+
+X-Sieve: CMU Sieve 2.3
+X-DSPAM-Result: Innocent
+X=DSPAN-Confidence: 0.8475
+X-Content-Type-Message-Body: text/plain
+X-Plane is behind schedule: two weeks
+
+eg. ^X-\S+:
+start of the line is X-
+match any non-whitespace character \s
+one or more times +
+followed by a colon:
+
+Therefore X-Plane is behind schedule: two weeks is NOT chosen by this re
+
+11.2 Extracting Data
+
+[] is a single character
+eg. [0-9]+ means one or more digits
+
+import re
+x = 'My 2 favorite numbers are 19 and 42'
+y = re.findall('[0-9]+', x)
+print(y)
+ 
+just like a split and for-loop
+you will get the list ['2', '19', '42']
+
+---
+y = re.findall('[AEIOU]+', x)
+print(y)
+
+get an empty list []
+
+---
+What is Greedy Matching
+The repeat characters (* and +) push outward in both directions (greedy) to match the largest possible string.
+
+eg. Greedy Matching
+
+import re
+x = 'From: Using the : character'
+y = re.findall('^F.+', x)
+print(y)
+
+Return:
+['From: Using the :']
+Notice that it is greedy so that it does not return ['From:']
+
+---
+Non-Greedy Matching
+prefers the shortest string that matches re
+
+eg.
+import re
+x = 'From: Using the : character'
+y = re.findall('^F.+?', x)
+print(y)
+
+Return:
+['From:']
+
+eg. Looking for email addresses
+
+x = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+y = re.findall('\s+@\s+', x)
+print(y)
+
+Return:
+['stephen.marquard@uct.ac.za']
+
+Note: if non-greedy, the Return will be ['d@u']
+
+---
+Fine-tuning String Extraction
+Parentheses are not part of the match - but they tell where to start and stop what string to extract
+
+x = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+y = re.findall('From (\s+@\s+)', x)
+print(y)
+
+Return:
+['stephen.marquard@uct.ac.za'] #The result seems the same
+
+---
+eg. Extracting a host name using find and string slicing
+
+data = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+atpos = data.find('@')
+sppos = data.find(' ', atpos)
+host = data[atpos+1. sppos]
+print(host)
+
+Return:
+21
+31
+uct.ac.za
+
+---
+Using dual split pattern
+
+words = data.split()
+email = words[1]
+pieces = email.split('@')
+print(piesec[1])
+
+Return:
+['From', 'stephen.marquard@uct.ac.za', 'Sat', 'Jan', '5', '09:14:16', '2008']
+'stephen.marquard@uct.ac.za'
+['stephen.marquard', 'uct.ac.za']
+'uct.ac.za'
+
+---Using Regex
+import re
+data = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+y = re.findall('@([^ ]*)', data)
+print(y)
+
+Return:
+['uct.ac.za']
+
+'@([^ ]*)'
+@  look through the string until you find an at sign
+() extract only inside the parentheses
+[^ ] match non-blank character
+^ means not
+* match many times
+
+---
+data = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+y = re.findall('^From .*@([^ ]*)', data)
+print(y)
+
+Return:
+['utc.ac.za']
+
+'^From .*@([^ ]*)'
+^From starting at the beginning of the line, look for string 'From ' 
+.*@  any number of characters up to an @
+( begin extracting
+[^ ]* any number of non-blank characters
+) end extracting
+
+Notice:
+^ marks the beginning of a line
+[^] marks a single character NOT in the listed set
+
+So, if you if you didn't have a from line,
+you would get nothing back,
+and you're not finding email addresses in the middle of text,
+you're just finding email addresses on lines that start with from space.
+
+---
+import re
+hand = open('mbox-shor.txt')
+numlist = list()
+for line in hand:
+	line = line.rstrip()
+	stuff = re.findall('^X-DSSPAM-Confidence: ([0-9.]+)', line)
+	if len(stuff) != 1:	continue # stuff is a list of extracted numbers with one floating number in each element
+	num = float(stuff[0])	#Extract the number from the one-element list and get float from strings
+	numlist.append(num)	#Add the number of this line to the list numlist
+print('Maximum:', max(numlist))
+
+
+
+Starting from X-DSSPAM-Confidence: 
+Followed by a blank
+Start to extract any times of numbers and dot.
+with the dot. we can get floating numbers
+
+---
+Escape Character
+prefix the character with backslash \
+eg. \. \#
+
+Question:
+data = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+y = re.findall('\S+?@\S+', data)
+print(y)

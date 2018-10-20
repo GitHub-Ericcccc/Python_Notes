@@ -1,0 +1,117 @@
+Course 4 Using database with python
+
+Chapter 14
+
+This course is more about database and Structured Query Language (SQL) than about python.
+
+print(ord('H'))
+
+print(ord('e'))
+
+print(ord('\n'))
+
+The ord() function tells us the numeric value of a simple ASCII character.
+
+Unicode is designed for extracting all possible characters.
+
+When we talk to an external resource like a network socket we sends bytes, so we need to encode Python 3 strings into a given character encoding.
+When we read data from an external resource, we must decode it based on the character set so it is properly represented in Python 3 as a string.
+
+while True:
+	data = mysock.recv(512)
+	if (len(data) < 1):
+		break
+	mystring = data.decode() # by defalut, it use ascii or utf-8 to decode dynamically.
+	print(mystring)
+
+# decode goes from data(bytes) to string(unicode) VERY IMPORTANT!
+# decode is a method in bytes-class
+# encode is a method in string-class
+# see documentation
+
+14.1 Object Oriented Programming (VERY IMPORTANT)
+
+An Object is a bit of self-contained Code and Data.
+A Class is a template. (with data and code)
+Method or Message is a defined capability of a class. (function lives in an object)
+Field or Attribute is a bit of data in class.
+Object or Instance is a particular instance of a class.
+Constructor is code that runs when an object is created.
+Inheritance is the ability to extend a class to make a new class.
+
+
+use type(object) to find out its class.
+use dir(object) to find out its methods.
+
+14.2 Our First Class and Object
+
+# 14.2
+
+class PartyAnimal:
+    x = 0
+
+    def __init__(self):
+        print('I am constructed.')
+
+    def party(self):
+        self.x = self.x + 1
+        print('So far', self.x)
+
+    def __del__(self):
+              print('I amd destructed', self.x)
+
+x = PartyAnimal()
+
+x.party()
+x.party()
+x.party()
+x = 546165 # reassign new value to x and destruct its class
+print('x contains', x)
+
+print(dir(PartyAnimal)) # Notice that there is 'party' and 'x' inside which defined by this class.
+
+
+# What we are doing here is just like
+# For example the class 'list'
+# newlist = list()
+# newlist.append('x')
+# newlist.append('x')
+# newlist.append('x')
+# print(newlist)
+
+# append is a method (inner function) of the object list
+# the 'x' here is the data of the object list
+# the newlist is an oject of class list
+
+
+14.3 Object Life Cycle
+
+Objects are created, used and discarded.
+We have special blocks of code (methods) that get called:
+	at the moment of creation - constructor, which is used a lot.
+	at the moment of destruction - destructor, which is seldom used.
+
+class PartyAnimal:
+    x = 0
+    name = ''
+    def __init__(self, z):
+        self.name = z
+        print(self.name, 'constructed.')
+
+    def party(self):
+        self.x = self.x + 1
+        print(self.name, 'party count', self.x)
+
+s = PartyAnimal('sally')
+s.party()
+
+j = PartyAnimal('jim')
+j.party()
+s.party()
+
+# This example works like this:
+# s = {x=2, name = sally}
+# j = (x=1, name = jim)
+# s and j are two independent instances with their own name and x.
+
+14.4 Object Inheritance

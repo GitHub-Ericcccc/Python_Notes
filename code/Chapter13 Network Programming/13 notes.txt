@@ -29,7 +29,7 @@ see slides
 
  https://nmap.org/movies/
 
- 12.3 Workded Example: Sockets
+ Workded Example: Sockets
 
 socket1.py
 
@@ -38,3 +38,8 @@ Use chrome developer tools F12
 see page Network and then refresh page
 you can see request header and respond header
 This is exactly the same of code in socket1.py
+
+---
+12.3 - Unicode Characters and Strings
+
+12.4 - Retrieving Web Pages

@@ -3,45 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79ac4910-7dde-4011-a702-a76024338ec5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter0 Shortcus/0.0 shortcuts.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter0 Shortcus/0.0 shortcuts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter10 Tuples/10.1 tuples.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter10 Tuples/10.1 tuples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter12 Regular Expressions/12 notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter12 Regular Expressions/12 notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter12 Regular Expressions/answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter12 Regular Expressions/answer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter12 Regular Expressions/original.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter12 Regular Expressions/original.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter12 Regular Expressions/shorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter12 Regular Expressions/shorter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter13 Network Programming/13 notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter13 Network Programming/13 notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter14 Using Web Services/14.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter14 Using Web Services/14.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter14 Using Web Services/14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter14 Using Web Services/14.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter15 Object-Oriented Programming/15.1 Relational Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter15 Object-Oriented Programming/15.1 Relational Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter7 Strings/7.1 strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter7 Strings/7.1 strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter8 Files/8.1 files.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter8 Files/8.1 files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter8 Files/8.2 processing files.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter8 Files/8.2 processing files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter8 Files/8.3 assignment.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter8 Files/8.3 assignment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter9 Lists/9.0 string and list methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter9 Lists/9.0 string and list methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter9 Lists/9.1 list.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter9 Lists/9.1 list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter9 Lists/9.2 manipulating lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter9 Lists/9.2 manipulating lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter9 Lists/9.3 list and strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter9 Lists/9.3 list and strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter9 Lists/9.4 assignment.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter9 Lists/9.4 assignment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Chapter9 Lists/9.5 assignment.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Chapter9 Lists/9.5 assignment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/resources/mbox.txt" beforeDir="false" afterPath="$PROJECT_DIR$/code/resources/mbox.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.3-py3.6.egg/EGG-INFO/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.3-py3.6.egg/EGG-INFO/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe.manifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install.exe.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install.exe.manifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip.exe.manifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.6-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.6-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.6.exe.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.6.exe.manifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.exe.manifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,58 +16,34 @@
     <SUITE FILE_PATH="coverage/Python_Notes$test.coverage" NAME="test Coverage Results" MODIFIED="1540067577756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_Notes$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1540136015775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sql" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sql [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="Python_Notes" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="15.1 Relational Database.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/Chapter15 Object-Oriented Programming/15.1 Relational Database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="7.1 strings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/Chapter7 Strings/7.1 strings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3279" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scratch.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="13.1 socket1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/Chapter13 Network Programming/13.1 socket1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="3" selection-start-line="3" selection-end-line="3" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -142,7 +79,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -155,6 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,12 +107,6 @@
             </path>
             <path>
               <item name="Python_Notes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python_Notes" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter16 Databases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python_Notes" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -186,7 +118,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,20 +290,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067025" side_tool="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.14144272" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49932975" weight="0.32673267" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32531825" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956153" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.19571045" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.19839142" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
       <window_info id="Structure" order="1" sideWeight="0.5021097" side_tool="true" weight="0.1930295" />
       <window_info id="Favorites" order="2" sideWeight="0.5021097" side_tool="true" weight="0.1930295" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -428,6 +358,40 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/code/Chapter15 Object-Oriented Programming/15.1 Relational Database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Chapter13 Network Programming/13.1 socket1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Chapter7 Strings/7.1 strings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/Chapter15 Object-Oriented Programming/15.1 Relational Database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -515,20 +479,6 @@
     <entry file="file://$PROJECT_DIR$/code/10.1 tuples.py" />
     <entry file="file://$PROJECT_DIR$/code/8.6 worked exercise lists.py" />
     <entry file="file://$PROJECT_DIR$/code/resources/9.4 assignment.py" />
-    <entry file="file://$PROJECT_DIR$/code/Chapter13 Network Programming/13.1 socket1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/Chapter14 Using Web Services/14.1.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -541,8 +491,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/Chapter15 Object-Oriented Programming/15.1 Relational Database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="250">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Chapter7 Strings/7.1 strings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Chapter14 Using Web Services/13 assignment #2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="54" column="43" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="54" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Chapter13 Network Programming/13.1 socket1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -555,15 +529,10 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="75">
-            <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/Chapter7 Strings/7.1 strings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3279" />
       </provider>
     </entry>
   </component>

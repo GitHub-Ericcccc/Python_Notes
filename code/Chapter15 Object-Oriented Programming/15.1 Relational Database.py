@@ -29,3 +29,19 @@ SQL handles structured data by creating tables, retrieving data, inserting or de
 # SELECT * FROM Users WHERE email='dfadfsaf'
 # The * means all rows.
 # SELECT * FROM Users ORDER BY email
+
+CREATE TABLE Users(
+	name VARCHAR(128),
+	email VARCHAR(128)
+)
+
+INSERT INTO Users(name, email) VALUES('e', 'e@email')
+
+DELETE FROM Users WHERE name = 'a'
+
+UPDATE Users SET name = 'f' WHERE email = 'c@email'
+
+SELECT * FROM Users
+* means all 
+
+SELECT * FROM Users ORDER BY name

@@ -1,0 +1,6 @@
+16.1 - Geocoding
+
+Data Source -> Gather -> Clean/Process -> Database ->Visualize and Analyze
+
+16.2 - Geocoding Visualization
+

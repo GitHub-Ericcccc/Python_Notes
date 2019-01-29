@@ -1,0 +1,148 @@
+# 15.4 - Designing a Data Model
+
+Basic Rule: Don't put the same string data in twice - use a relationship instead.
+
+When there is one thing in the 'real world' there should be one copy of that thing in the database.
+	- A problem has to do with replicated data in columns, which may lead to inefficiency with large amount of data.
+	- Distinguish wheather 'the thing' represents a 'real thing' in the world or just an attribute of others.
+
+Example: Music Album
+
+Track: the real thing
+Rating, Len and Count: the attributes
+
+Tracks belong to Album.
+Album belongs to Artist.
+Genre belongs to Track.
+
+#15.5 - Representing a Data Model in Tables
+
+A primary key is a way for us to refer to a particular row and it has a unique number.
+
+Table Track:
+id-primary key
+title-logical key
+rating
+len
+count
+album_id-foreign key
+
+Table Album:
+id-primary key
+title-logical key
+artist_id-foreign key
+
+Table Artist:
+id-primary key
+name-logical key
+
+Table Genre:
+id-primary key
+name-logical key
+
+Therefore, the album_id(foreign key) points to Primay Key in Table Album.
+Primary Key is the ending point of the arrow.
+Foreign Key is the starting point ot the arrow.
+Foreign Key ---> Primary Key
+Logical Key is the for looking up like shortcuts.You might use this for WHERE Caluse or ORDER BY Caluse.
+
+Learn the name convention from where you work.
+
+
+SQL
+
+CREATE TABLE `Artist` (
+	`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	`name`	TEXT
+);
+
+We tend to work outward in. The leaves ot this tree outward in.
+Artist, Genre, Album then Track Table.
+Because you need to create ends of the arrows before creating the beginnings of the arrows.
+
+CREATE TABLE Genre(
+	id INTEGER NOT NULL PRIMARY KEY autoincrement unique,
+	name text
+)
+
+The next is Album Table, which is the first table to have a foreign key.
+
+CREATE TABLE Album(
+	id integer not null primary key autoincrement unique,
+	artist_id integer,
+	title text
+)
+
+
+CREATE TABLE Track(
+	id integer not null primary key autoincrement unique,
+	title TEXT,
+	album_id integer,
+	genre_id integer,
+	len integer, rating integer, count integer
+)
+
+
+#15.6 - Inserting Relational Data
+
+When we insert data to Artist Table, we don't need to specify id because it is autoincrement data.
+The keywords of SQL, their cases do not matter. You can use INSERT or insert.
+
+insert into Artist(name) values('Led Zepplin');
+insert into Artist(name) values('AC/DC')
+
+Notice that you need to put a semicolon; at the end of each command line to use multiple commands.
+
+insert into Genre(name) Values('Rock');
+insert into Genre(name) values('Metal')
+
+insert into Album(title, artist_id) values('Who Made Who', 2);
+insert into Album(title, artist_id) values('IV', 1)
+
+Key Point! Take a close look at the two commands above.
+You need to use the artist_id as numbers instead of using them directly by inputing strings.
+You might need to remember them from Artist Table to make it correct.
+Actually, we can use Python code to do this like 'insert Genre as Rock' then let python to get the right id number.
+
+insert into Track (title, rating, len, count, album_id, genre_id) 
+     values ('Black Dog', 5, 297, 0, 2, 1);
+insert into Track (title, rating, len, count, album_id, genre_id)
+     values ('Stairway', 5, 482, 0, 2, 1);
+insert into Track (title, rating, len, count, album_id, genre_id) 
+     values ('About to Rock', 5, 313, 0, 1, 2);
+insert into Track (title, rating, len, count, album_id, genre_id) 
+     values ('Who Made Who', 5, 207, 0, 1, 2)
+
+See this above code, it is OKAY to have replications as long as they are numbers. We should never see replications of strings!
+
+If there's millions of them it's not just that it takes up storage, it's it has to do with how much has to be scanned.
+So part of what you're trying to do in databases is reduce the amount of data that has to be scanned to get to a particular piece of information.
+
+#15.7 - Reconstructing Data with JOIN
+
+The JOIN Operation
+It links across several tables as part of a select operation.
+You must tell the JOIN how to use the keys that meake the connection between the ables using an ON clause.
+This operation is used to show/output the user interface desired results rather than only many id numbers.
+
+Example:
+select Album.title, Artist.name from Album join Artist on Album.artist_id = Artist.id
+select Album.title, Album.artist_id, Artist.id, Artist.name from Album join Artist on Album.artist_id = Artist.id
+select Track.title, Genre.name from Track join Genre on Track.genre_id = Genre.id
+select Track.title, Genre.name from Track join Genre
+
+# notice that without the on clause, it will show all combinations of two sides, which is useless.
+# On clause only picks the combinations that match, which is what we need.
+
+select Track.title, Artist.name, Album.title, Genre.name from Track join Genre join Album join Artist
+on Track.genre_id = Genre.id and Track.album_id = Album.id and Album.artist_id = Artist.id
+
+# Worked Example: Tracks.py (Chapter 15)
+
+After running the Tracks.py, you will get a sqlite3 file.
+Open it then type the following commands.
+
+
+select Track.title, Album.title, Artist.name from Track join Album join Artist on Track.album_id = Album.id and Album.artist_id = Artist.id
+
+Therefore, we get a track list. We can use xml from iTunes library.
